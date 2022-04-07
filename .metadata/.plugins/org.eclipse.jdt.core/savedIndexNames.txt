@@ -1,0 +1,4 @@
+INDEX VERSION 1.131+D:\DMills\GC\Lab2.5-StringMethodsLab\.metadata\.plugins\org.eclipse.jdt.core
+1865797976.index
+2057033666.index
+760091825.index
