@@ -1,6 +1,3 @@
-import java.util.Arrays;
-import java.util.ArrayList;
-
 /*
 Task: Create a class named StringLab. Add the standard main method.
 
@@ -55,10 +52,12 @@ public class StringMethods {
 		}
 	}
 
+	//not working
 	public static String reverse(String s) {
 		String reverseWord = "";
 		for (int i = s.length(); i < 0; i--) {
-			reverseWord = reverseWord + s.charAt(i);
+			reverseWord += s.charAt(i);
+			System.out.println(s.charAt(i));
 		}
 		return reverseWord;
 	}
@@ -83,16 +82,19 @@ public class StringMethods {
 	}
 
 	public static void letterize(String word) {
-		for (int i=0; i<word.length(); i++) {
+		for (int i = 0; i < word.length(); i++) {
 			System.out.println(word.charAt(i));
 		}
 	}
-	
+
 	public static String camelCase(String phrase) {
-		phrase.toLowerCase();
-		String[] temp = phrase.split(" ");
-		int phraseArrayLength = temp.length;
-		return
-		
+		String tempString = "";
+		String lowerCasePhrase = phrase.toLowerCase();
+		String[] tempStrArray = lowerCasePhrase.split(" ");
+		tempString += tempStrArray[0];
+		for (int i = 1; i < tempStrArray.length; i++) {
+			tempString += capitalize(tempStrArray[i]);
+		}
+		return tempString;
 	}
 }
