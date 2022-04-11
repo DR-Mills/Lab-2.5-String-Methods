@@ -14,7 +14,8 @@ public class StringLab {
 //				);
 //		}
 //		System.out.println();
-		StringMethods.firstThingsFirst("aaab", "aaad");
+		String names[] = {"bill", "jane", "rick"};
+		System.out.println(names);
 		
 
 	}
